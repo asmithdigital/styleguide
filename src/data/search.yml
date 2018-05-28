@@ -1,0 +1,9 @@
+# These are search results that lead to the old versions of Style guide.
+-
+  type: old version
+  name: An old version
+  description: Description for an old version
+  link: 'http://link.to.old.version'
+  tags:
+    - old
+    - previous

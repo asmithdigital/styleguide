@@ -1,0 +1,28 @@
+<nav class="global-nav show-for-smedium">
+
+  <div class="global-nav-title">
+    <a class="zurb-logo" href="/"><img src="https://via.placeholder.com/468x144/"></a>
+  </div>
+
+  <ul class="dropdown menu right-side" data-dropdown-menu data-click-open="true">
+
+    <li class="menu-item">
+      {{#each global.header-menu}}
+      <a href="/">{{title}}</a>
+      <ul class="menu">
+        {{#each section}}
+        <li class="title">{{title}}</li>
+        {{#each items}}
+        <li><a href="{{link}}">{{text}}</a></li>
+        {{/each}}
+        <li class="divider"></li>
+        {{/each}}
+      </ul>
+      {{/each}}
+    </li>
+
+    <!--<li class="menu-button"><a href="/" class="button">Getting Started</a></li>-->
+
+  </ul>
+
+</nav>

@@ -1,0 +1,25 @@
+<div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas data-position="left">
+  <button class="close-button" aria-label="Close menu" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <ul class="mobile-ofc vertical menu">
+
+    <li>
+      {{#each global.header-menu}}
+      <a href="/">{{title}}</a>
+      <ul class="submenu menu vertical" data-submenu>
+        {{#each section}}
+        <li class="title">{{title}}</li>
+        {{#each items}}
+        <li><a href="{{link}}">{{text}}</a></li>
+        {{/each}}
+        <li class="divider"></li>
+        {{/each}}
+      </ul>
+      {{/each}}
+    </li>
+
+    <!--<li><a href="/" class="button">Getting Started</a></li>-->
+
+  </ul>
+</div>

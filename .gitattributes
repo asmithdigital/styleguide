@@ -1,0 +1,6 @@
+src/assets/css/*.css -diff
+src/docs/dist/**/* -diff
+src/assets/js/vendor/**/*.js -diff
+src/assets/js/*.js -diff
+src/assets/js/**/*.js -diff
+src/assets/js/**/*.*.js -diff

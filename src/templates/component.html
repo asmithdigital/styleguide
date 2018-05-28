@@ -1,0 +1,83 @@
+{{#if static}}
+{{ docs }}
+{{/if}}
+
+{{#unless static}}
+<article class="docs-component" id="docs-{{escape title}}">
+
+  <!--<a href="#docs-menu" class="small secondary button expanded hide-for-medium mobile-nav-button">Jump to Nav</a>-->
+
+  {{#if video-hero}}
+  {{> video-hero-header}}
+  {{/if}}
+
+  {{!-- Start container for docs and table of contents --}}
+  <div class="row">
+
+    {{!-- Start container for docs --}}
+    <div class="large-9 columns docs-component-inner {{#if video-hero}}has-video-hero{{/if}}" id="docs">
+      <div>
+        {{#unless video-hero}}
+        {{> header}}
+        {{/unless}}
+
+        {{ docs }}
+
+        {{#if sass}}
+        <hr>
+        {{> sass-reference}}
+        {{/if}}
+
+        {{#if js}}
+        <hr>
+        {{> javascript-reference}}
+        {{/if}}
+
+        {{#if sass}}
+        <!-- <hr> -->
+        {{> building-blocks}}
+        {{/if}}
+
+        <hr>
+
+        <nav aria-label="Pagination">
+          <ul class="menu" style="display: block !important">
+            <li class="docs-pagination-prev float-left"><a href="#" aria-label="Previous page"><i class="fa fa-arrow-left"></i> <span></span></a></li>
+            <li class="docs-pagination-next float-right"><a href="#" aria-label="Next page"><span></span> <i class="fa fa-arrow-right"></i></a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+    {{!-- End container for docs --}}
+
+
+    <div class="large-3 columns show-for-medium">
+      <nav class="docs-toc-wrap" id="docsToc" data-sticky-container>
+        <div class="docs-toc hide" id="docsTOC" data-sticky data-margin-top="6" data-anchor="docs">
+          <ul class="vertical menu" data-docs-toc>
+            <li class="docs-nav-title">{{ title }}</li>
+          </ul>
+          <hr class="docs-toc-divider small">
+          <ul class="docs-contribute-menu">
+            <li><a href="#0" target="_blank"><i class="fi-social-github"></i>Report a Bug</a></li>
+            <li><a href="#0" target="_blank"><i class="fi-comment"></i>Get Help</a></li>
+          </ul>
+          {{#if static-demo}}
+          <div class="foundation-toc-ad-unit" id="TOCAdUnit">
+            <div class="ad-unit">
+              <h3 class="ad-unit-title">Static demo</h3>
+              <p class="ad-unit-text">View a static demonstration of {{title}} in the context of the site template.</p>
+              <a class="button ad-unit-button" href="{{static-demo}}.html" target="_blank">View demonstration</a>
+            </div>
+          </div>
+          {{/if}}
+        </div>
+      </nav>
+    </div>
+
+  </div>
+  {{!-- End container for docs and table of contents --}}
+
+</article>
+{{/unless}}

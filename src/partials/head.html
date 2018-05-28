@@ -1,0 +1,36 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{description}}">
+  <link rel="icon" href="{{root}}assets/img/icons/apple-touch-icon-144-precomposed.png" type="image/x-icon">
+  <title>{{#unlesspage 'index'}}{{title}} | {{/unlesspage}}Style guide</title>
+
+  <!--[if gt IE 8]><!-->
+  {{#if reset-css}}
+  <!-- DO NOT use reset.css in any web site or application at any time EVER -->
+  <!-- reset.css is only for this demo page and is build into app.css and header-footer.css -->
+  <link href="assets/css/reset.css" rel="stylesheet">
+  {{/if}}
+  {{#if static}}
+  <link href="assets/css/app.css" rel="stylesheet">
+  {{/if}}
+  {{#if header-footer}}
+    {{#unless header-footer-template}}
+  <link href="assets/css/header-footer.css" rel="stylesheet">
+    {{/unless}}
+  {{/if}}
+  {{#unless static}}
+    {{#unless header-footer}}
+  <link href="{{root}}assets/css/docs.css" rel="stylesheet" />
+    {{/unless}}
+  {{/unless}}
+  {{#if header-footer-template}}
+  <!-- Path to global CSS for header footer template -->
+  {{/if}}
+  <!--<![endif]-->
+
+</head>

@@ -1,0 +1,15 @@
+$foundation-palette: (
+  primary: #005a9c,
+  secondary: #d40000,
+  tertiary: #dde5ee,
+  quaternary: #b38808,
+  quinary: #666,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+
+$black: #000;
+$white: #fff;
+
+@include add-foundation-colors;

@@ -1,0 +1,19 @@
+{
+  "dest" : "src/assets/js/vendor/modernizr.js",
+  "options" : [
+    "setClasses",
+    "addTest",
+    "html5printshiv",
+    "testProp",
+    "fnBind"
+  ],
+  "tests": ["picture", "srcset", "audio"],
+  "files" : {
+    "src": [
+      "app/assets/js/**/*.js",
+      "src/assets/js/**/*.js",
+      "app/assets/css/*.css",
+      "src/assets/css/*.css"
+    ]
+  }
+}

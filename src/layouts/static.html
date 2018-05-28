@@ -1,0 +1,36 @@
+{{> head}}
+
+<body>
+
+  <div class="o-off-canvas__wrapper">
+
+    {{> static-off-canvas}}
+
+    <div class="o-off-canvas__content" data-off-canvas-content>
+
+      <header class="o-layout__header" id="top" role="banner">
+        {{> static-global-header}}
+      </header>
+
+      <main class="o-layout__main">
+
+        <article class="o-layout__main-content" id="main-content" role="main">
+          {{> body}}
+
+          <button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
+
+        </article>
+
+      </main>
+
+      <footer  class="o-layout__footer">
+        {{> static-global-footer}}
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="{{root}}assets/js/app.jquery.js"></script>
+
+  </body>
+</html>

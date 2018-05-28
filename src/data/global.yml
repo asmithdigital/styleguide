@@ -1,0 +1,33 @@
+version: 0.0.0
+
+# top menu in the style guide docs header
+header-menu:
+  -
+    title: 'Resources'
+    section:
+    -
+      title: 'Section 1'
+      items:
+        -
+          text: 'Link 1'
+          link: '#0'
+    -
+      title: 'Section 2'
+      items:
+        -
+          text: 'Link 1'
+          link: '#0'
+
+# site menu demo in the static site
+site-menu:
+    -
+      text: 'Menu item'
+      link: 'static'
+      second-level:
+        -
+          text: 'Menu item'
+          link: '#0'
+          third-level:
+            -
+              text: 'menu item'
+              link: '#0'

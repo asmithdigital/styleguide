@@ -1,0 +1,34 @@
+{{> head}}
+
+<body>
+
+<div class="off-canvas-wrapper">
+  {{> off-canvi}}
+
+  <div class="docs-off-canvas-content off-canvas-content" data-off-canvas-content>
+    <div class="docs-sticky-top-bar">
+      {{> navigation}}
+      {{> mobile-navigation}}
+      {{> search-bar}}
+    </div>
+
+    <div class="collapse expanded row">
+      {{!-- info-banner --}}
+      <div id="body-container" class="small-12 medium-9 large-10 medium-push-3 large-push-2 columns">
+<!-- do not indent -->
+{{> body}}
+      </div>
+      <div class="medium-3 large-2 medium-pull-9 large-pull-10 hide-for-small-only columns" data-sticky-container>
+        <div class="docs-nav-container" data-sticky data-anchor="body-container" data-margin-top="6">
+          {{> component-list}}
+        </div>
+      </div>
+    </div>
+    {{> footer}}
+  </div>
+</div>
+
+<script src="{{root}}assets/js/docs.bundle.js"></script>
+
+</body>
+</html>

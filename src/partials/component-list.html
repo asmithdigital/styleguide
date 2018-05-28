@@ -1,0 +1,26 @@
+<div class="docs-nav" id="docs-menu">
+
+<!--
+  <ul class="docs-nav-version-container">
+    <li class="docs-nav-version">
+      <a href="https://github.com/zurb/foundation-sites/releases/" target="_blank">Changelog</a>
+    </li>
+  </ul>
+-->
+
+  <ul class="accordion docs-nav-category" data-accordion data-allow-all-closed="true" data-multi-expand="true">
+    <a class="docs-expand-all" data-expand-all="true"></a>
+    <li class="accordion-item {{#ifpage 'index' 'getting-started' 'javascript'}}is-active{{/ifpage}}" data-accordion-item>
+      <a href="#" class="accordion-title">Setup</a>
+      <div class="accordion-content {{#ifpage 'index' 'getting-started' 'global-assets' 'javascript'}}is-active{{/ifpage}}" data-tab-content>
+        <ul class="docs-nav-subcategory">
+          <li{{#ifpage 'index'}} class="current"{{/ifpage}}><a href="index.html">Welcome</a></li>
+          <li{{#ifpage 'getting-started'}} class="current"{{/ifpage}}><a href="getting-started.html">Getting started</a></li>
+          <li{{#ifpage 'javascript'}} class="current"{{/ifpage}}><a href="javascript.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </li>
+
+  </ul>
+
+</div>
