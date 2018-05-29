@@ -49,7 +49,7 @@ gulp.task('build',
 // This task is used outside of Docker and sets up a local server.
 // We don't need to run any build of CSS of JS, just copy the already built assets and html.
 gulp.task('start',
-  gulp.series('pages', gulp.parallel('images'), 'copy', server));
+  gulp.series('pages', gulp.parallel('images'), 'copy', server, watch));
 
 // Default gulp task.
 gulp.task('default',
