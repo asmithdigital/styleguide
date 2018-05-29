@@ -1,8 +1,8 @@
 ---
-title: Style guide
-description: Style guide documentation.
+title: Static site
+description: Static demonstration of style guide.
+layout: static
+static: true
 ---
 
-Welcome to Style guide.
-
-<a href="getting-started.html" class="button large">Get started</a>
+Hello
