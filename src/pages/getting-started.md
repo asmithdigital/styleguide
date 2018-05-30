@@ -1,7 +1,7 @@
 ---
 title: Getting started
 description: Documentation for getting started.
-static-demo: static
+static-demo: index
 ---
 
 

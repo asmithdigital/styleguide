@@ -6,3 +6,7 @@
 
 ## Start
 `yarn start`
+
+## Styleguide
+
+`http://localhost:8000/styleguide.html`
