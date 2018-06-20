@@ -95,7 +95,7 @@ function watch() {
   gulp.watch('src/pages/**/*', {usePolling: true}).on('all', gulp.series('pages', TASKS.browser.reload));
   gulp.watch('src/{layouts,partials}/**/*', {usePolling: true}).on('all', gulp.series(resetPages, 'pages', TASKS.browser.reload));
   gulp.watch(['src/assets/scss/**/*.scss', 'src/docs/scss/**/*.scss'], {usePolling: true}).on('all',  gulp.series('sass', TASKS.browser.reload));
-  gulp.watch('src/assets/js/**/*.js', {usePolling: true}).on('all', gulp.series('javascript', TASKS.browser.reload));
+  gulp.watch('src/js/**/*.js', {usePolling: true}).on('all', gulp.series('javascript', TASKS.browser.reload));
   gulp.watch('src/docs/js/*.js', {usePolling: true}).on('all', gulp.series('javascript', TASKS.browser.reload));
-  gulp.watch('src/assets/img/**/*', {usePolling: true}).on('all', gulp.series('images', TASKS.browser.reload));
+  gulp.watch('src/img/**/*', {usePolling: true}).on('all', gulp.series('images', TASKS.browser.reload));
 }
